@@ -1,0 +1,54 @@
+{
+  "_comment": "Configuration RYDI Assistant — adapte les chemins à ta machine",
+
+  "face": {
+    "model_path":    "models/face_model.yml",
+    "labels_path":   "models/labels.txt",
+    "threshold":     95,
+    "confirm_frames": 8,
+    "recheck_every_seconds": 30
+  },
+
+  "voice": {
+    "language":      "fr-FR",
+    "energy_threshold": 250,
+    "pause_threshold":  0.6,
+    "phrase_limit_seconds": 6
+  },
+
+  "tts": {
+    "rate": 160,
+    "volume": 0.95,
+    "language_preference": "fr"
+  },
+
+  "apps": {
+    "chrome":    "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "firefox":   "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "vscode":    "C:\\Users\\DELL\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe",
+    "notepad":   "notepad.exe",
+    "calc":      "calc.exe",
+    "terminal":  "cmd.exe",
+    "explorer":  "explorer.exe",
+    "spotify":   "C:\\Users\\DELL\\AppData\\Roaming\\Spotify\\Spotify.exe",
+    "whatsapp":  "C:\\Users\\DELL\\AppData\\Local\\WhatsApp\\WhatsApp.exe",
+    "telegram":  "C:\\Users\\DELL\\AppData\\Roaming\\Telegram Desktop\\Telegram.exe"
+  },
+
+  "scripts": {
+    "astrawatch":    "C:\\RYDI\\AstraWatch\\app.py",
+    "face_system":   "C:\\RYDI\\face_system\\main.py",
+    "flask_server":  "C:\\RYDI\\server\\app.py",
+    "test":          "C:\\RYDI\\tests\\run_tests.py"
+  },
+
+  "folders": {
+    "documents":  "%USERPROFILE%\\Documents",
+    "desktop":    "%USERPROFILE%\\Desktop",
+    "downloads":  "%USERPROFILE%\\Downloads",
+    "projects":   "C:\\RYDI"
+  },
+
+  "camera_index": 0,
+  "log_level": "INFO"
+}

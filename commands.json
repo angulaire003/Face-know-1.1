@@ -1,0 +1,90 @@
+{
+  "_comment": "Fichier de configuration des commandes vocales RYDI Assistant",
+  "_comment2": "Modifie librement les phrases et les actions",
+
+  "apps": {
+    "ouvre chrome":           {"action": "open_app", "target": "chrome"},
+    "ouvre google":           {"action": "open_app", "target": "chrome"},
+    "ouvre firefox":          {"action": "open_app", "target": "firefox"},
+    "ouvre vscode":           {"action": "open_app", "target": "vscode"},
+    "ouvre visual studio":    {"action": "open_app", "target": "vscode"},
+    "ouvre notepad":          {"action": "open_app", "target": "notepad"},
+    "ouvre le bloc notes":    {"action": "open_app", "target": "notepad"},
+    "ouvre calculatrice":     {"action": "open_app", "target": "calc"},
+    "ouvre le terminal":      {"action": "open_app", "target": "terminal"},
+    "ouvre explorateur":      {"action": "open_app", "target": "explorer"},
+    "ouvre spotify":          {"action": "open_app", "target": "spotify"},
+    "ouvre whatsapp":         {"action": "open_app", "target": "whatsapp"},
+    "ouvre telegram":         {"action": "open_app", "target": "telegram"},
+    "ferme cette fenêtre":    {"action": "close_window"},
+    "ferme l'application":    {"action": "close_app"},
+    "minimise":               {"action": "minimize"},
+    "agrandis":               {"action": "maximize"}
+  },
+
+  "scripts": {
+    "lance astrawatch":       {"action": "run_script", "target": "astrawatch"},
+    "lance la reconnaissance":{"action": "run_script", "target": "face_system"},
+    "lance le serveur":       {"action": "run_script", "target": "flask_server"},
+    "exécute le test":        {"action": "run_script", "target": "test"}
+  },
+
+  "files": {
+    "ouvre mes documents":    {"action": "open_folder", "target": "documents"},
+    "ouvre le bureau":        {"action": "open_folder", "target": "desktop"},
+    "ouvre les téléchargements": {"action": "open_folder", "target": "downloads"},
+    "ouvre mes projets":      {"action": "open_folder", "target": "projects"}
+  },
+
+  "music": {
+    "play":                   {"action": "music", "cmd": "play_pause"},
+    "pause":                  {"action": "music", "cmd": "play_pause"},
+    "suivant":                {"action": "music", "cmd": "next"},
+    "chanson suivante":       {"action": "music", "cmd": "next"},
+    "précédent":              {"action": "music", "cmd": "prev"},
+    "chanson précédente":     {"action": "music", "cmd": "prev"},
+    "volume plus":            {"action": "music", "cmd": "vol_up"},
+    "volume moins":           {"action": "music", "cmd": "vol_down"},
+    "coupe le son":           {"action": "music", "cmd": "mute"},
+    "sourdine":               {"action": "music", "cmd": "mute"}
+  },
+
+  "dictation": {
+    "écris":                  {"action": "dictate_start"},
+    "tape":                   {"action": "dictate_start"},
+    "saisie":                 {"action": "dictate_start"},
+    "arrête d'écrire":        {"action": "dictate_stop"},
+    "stop écriture":          {"action": "dictate_stop"},
+    "efface tout":            {"action": "dictate_clear"}
+  },
+
+  "system": {
+    "verrouille":             {"action": "lock_screen"},
+    "veille":                 {"action": "sleep"},
+    "redémarre":              {"action": "restart"},
+    "éteins le pc":           {"action": "shutdown"},
+    "capture d'écran":        {"action": "screenshot"},
+    "prend une capture":      {"action": "screenshot"},
+    "copie":                  {"action": "key", "keys": "ctrl+c"},
+    "colle":                  {"action": "key", "keys": "ctrl+v"},
+    "annule":                 {"action": "key", "keys": "ctrl+z"},
+    "sauvegarde":             {"action": "key", "keys": "ctrl+s"},
+    "tout sélectionner":      {"action": "key", "keys": "ctrl+a"},
+    "cherche":                {"action": "key", "keys": "ctrl+f"}
+  },
+
+  "web": {
+    "recherche":              {"action": "web_search"},
+    "cherche sur google":     {"action": "web_search"},
+    "ouvre youtube":          {"action": "open_url", "url": "https://youtube.com"},
+    "ouvre github":           {"action": "open_url", "url": "https://github.com"},
+    "ouvre gmail":            {"action": "open_url", "url": "https://gmail.com"}
+  },
+
+  "assistant": {
+    "aide":                   {"action": "help"},
+    "commandes disponibles":  {"action": "help"},
+    "arrête l'assistant":     {"action": "pause_assistant"},
+    "reprends l'assistant":   {"action": "resume_assistant"}
+  }
+}
